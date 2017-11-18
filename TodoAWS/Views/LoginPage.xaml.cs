@@ -102,5 +102,20 @@ namespace TodoAWSSimpleDB
 
 			Debug.WriteLine("Authentication error: " + e.Message);
 		}
-	}
+
+
+        // public Gift OnAddGiftClicked() { }
+
+        async void OnAddItemClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TodoItemPage
+            {
+                BindingContext = new TodoItem
+                {
+                    ID = Guid.NewGuid().ToString(),
+                    Notes = string.Empty
+                }
+            });
+        }
+    }
 }

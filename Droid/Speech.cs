@@ -19,7 +19,7 @@ namespace TodoAWSSimpleDB.Droid
 				}
 				else {
 					var p = new Dictionary<string, string> ();
-					textToSpeech.Speak (toSpeak, QueueMode.Flush, p);
+					//textToSpeech.Speak (toSpeak, QueueMode.Flush, p);
 				}
 			}
 		}
@@ -28,7 +28,7 @@ namespace TodoAWSSimpleDB.Droid
 		{
 			if (status.Equals (OperationResult.Success)) {
 				var p = new Dictionary<string, string> ();
-				textToSpeech.Speak (toSpeak, QueueMode.Flush, p);
+				//textToSpeech.Speak (toSpeak, QueueMode.Flush, p);
 			}
 		}
 	}

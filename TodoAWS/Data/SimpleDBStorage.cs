@@ -13,7 +13,7 @@ namespace TodoAWSSimpleDB
 	public class SimpleDBStorage : ISimpleDBStorage
 	{
 		AmazonSimpleDBClient client;
-		string tableName = "TodoAuth";
+		string tableName = "Gifts";
 
 		public List<TodoItem> Items { get; private set; }
 
@@ -21,13 +21,13 @@ namespace TodoAWSSimpleDB
 		{
 			var credentials = new CognitoAWSCredentials(
 								  Constants.CognitoIdentityPoolId,
-								  RegionEndpoint.USEast1);
+								  RegionEndpoint.EUWest1);
 			var config = new AmazonSimpleDBConfig();
-			config.RegionEndpoint = RegionEndpoint.USWest2;
+			config.RegionEndpoint = RegionEndpoint.EUWest1;
 			client = new AmazonSimpleDBClient(credentials, config);
 
 			Items = new List<TodoItem>();
-			SetupDomain();
+			 SetupDomain();
 		}
 
 		async Task SetupDomain()

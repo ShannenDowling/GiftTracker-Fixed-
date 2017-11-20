@@ -15,7 +15,9 @@ namespace TodoAWSSimpleDB
 			var todoItem = (TodoItem)BindingContext;
 			await App.TodoManager.SaveTaskAsync(todoItem);
 			await Navigation.PopAsync();
-		}
+
+            await Navigation.PushAsync(new TodoListPage());
+        }
 
 		async void OnDeleteActivated (object sender, EventArgs e)
 		{

@@ -30,11 +30,5 @@ namespace TodoAWSSimpleDB
 		{
 			await Navigation.PopAsync();
 		}
-
-		void OnSpeakActivated (object sender, EventArgs e)
-		{
-			var todoItem = (TodoItem)BindingContext;
-			App.Speech.Speak(todoItem.Name + " " + todoItem.Notes);
-		}
 	}
 }

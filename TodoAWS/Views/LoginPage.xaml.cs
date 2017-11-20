@@ -121,7 +121,7 @@ namespace TodoAWSSimpleDB
         {
             await Navigation.PushAsync(new TodoListPage());
             
-                //listView.ItemsSource = await App.TodoManager.GetTasksAsync();
+            //listView.ItemsSource = await App.TodoManager.GetTasksAsync();
             
 
         }

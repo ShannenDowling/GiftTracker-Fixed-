@@ -24,7 +24,7 @@ namespace TodoAWSSimpleDB
 				BindingContext = new TodoItem
 				{
 					ID = Guid.NewGuid().ToString(),
-					Notes = string.Empty
+					Link = string.Empty
 				}
 			});
 		}

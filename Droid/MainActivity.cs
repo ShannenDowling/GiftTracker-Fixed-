@@ -14,7 +14,7 @@ namespace TodoAWSSimpleDB.Droid
 			global::Xamarin.Forms.Forms.Init(this, bundle);
             global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
 
-            App.Speech = new Speech();
+            
 			LoadApplication(new App());
 		}
 	}

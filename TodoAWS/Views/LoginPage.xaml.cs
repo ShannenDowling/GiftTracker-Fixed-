@@ -105,6 +105,12 @@ namespace TodoAWSSimpleDB
         }
 
 
+        async void OnBrowseClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GiftTracker.Views.BrowsePage());
+
+        }
+
         async void OnAddItemClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new TodoItemPage
@@ -112,7 +118,7 @@ namespace TodoAWSSimpleDB
                 BindingContext = new TodoItem
                 {
                     ID = Guid.NewGuid().ToString(),
-                    Notes = string.Empty
+                    Link = string.Empty
                 }
             });
         }
@@ -120,12 +126,11 @@ namespace TodoAWSSimpleDB
         async void OnViewGiftsClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new TodoListPage());
-            
-            //listView.ItemsSource = await App.TodoManager.GetTasksAsync();
-            
 
+            ListView listView = new ListView();
+            listView.ItemsSource = await App.TodoManager.GetTasksAsync();
+            listView.IsVisible = true;
         }
-
 
         async void OnFriendsClicked(object sender, EventArgs e)
         {

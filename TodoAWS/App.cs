@@ -8,7 +8,7 @@ namespace TodoAWSSimpleDB
 	{
 		public static TodoItemManager TodoManager { get; private set; }
 		public static User User { get; set; }
-		public static ITextToSpeech Speech { get; set; }
+		
 
 		public App()
 		{

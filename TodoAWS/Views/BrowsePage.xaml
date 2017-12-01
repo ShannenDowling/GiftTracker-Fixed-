@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TodoAWSSimpleDB.FriendsPage"
-             Title="Friends">
+             x:Class="GiftTracker.Views.BrowsePage">
     <ContentPage.Content>
         <StackLayout>
-            <WebView Source="https://plus.google.com/u/0/people?pli=1"
+            <WebView Source="https://www.amazon.com/"
             HeightRequest="1000"
             WidthRequest="1000" />
         </StackLayout>

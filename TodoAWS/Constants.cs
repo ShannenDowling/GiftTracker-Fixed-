@@ -7,12 +7,12 @@
 		// AWS
 		// Sign up for an AWS account at https://aws.amazon.com/
 		// Configure at https://console.aws.amazon.com/cognito/
-		public static string CognitoIdentityPoolId = "eu-west-1:ebf7209f-f099-49d8-97ad-c4bea4e17914";
+		public static string CognitoIdentityPoolId = "";
 
 		// OAuth
 		// For Google login, configure at https://console.developers.google.com/
 		public static string iOSClientId = "<insert IOS client ID here>";
-		public static string AndroidClientId = "743902822396-jktudvrelvpbdm44b9licdjjl5lv9qc9.apps.googleusercontent.com";
+		public static string AndroidClientId = "";
 
 		// These values do not need changing
 		public static string Scope = "https://www.googleapis.com/auth/userinfo.email";
@@ -22,6 +22,6 @@
 
 		// Set these to reversed iOS/Android client ids, with :/oauth2redirect appended
 		public static string iOSRedirectUrl = "<insert IOS redirect URL here>:/oauth2redirect";
-		public static string AndroidRedirectUrl = "com.googleusercontent.apps.743902822396-jktudvrelvpbdm44b9licdjjl5lv9qc9:/oauth2redirect";
+		public static string AndroidRedirectUrl = ":/oauth2redirect";
 	}
 }
